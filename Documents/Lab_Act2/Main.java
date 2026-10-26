@@ -58,10 +58,13 @@ public class Main {
 
         Vehicle motorcycle = new Motorcycle("Yamaha", "Mio", 2022, 125);
         Vehicle truck = new Truck("Isuzu", "N-Series", 2020, 5.0);
-
+Vehicle car = new Car("Toyota", "Vios", 2022, 4);
         motorcycle.displayInfo();
-        System.out.println();
+System.out.println();
 
-        truck.displayInfo();
+truck.displayInfo();
+System.out.println();
+
+car.displayInfo();
     }
 }

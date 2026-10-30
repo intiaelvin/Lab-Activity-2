@@ -52,5 +52,19 @@ public class Main {
         System.out.println("Invalid constructor tests:");
         System.out.println("New vehicle with year 1885: " + invalidVehicle1.getYear());
         System.out.println("New vehicle with year 2027: " + invalidVehicle2.getYear());
+
+        System.out.println();
+        System.out.println("Polymorphism Tests:");
+
+        Vehicle motorcycle = new Motorcycle("Yamaha", "Mio", 2022, 125);
+        Vehicle truck = new Truck("Isuzu", "N-Series", 2020, 5.0);
+Vehicle car = new Car("Toyota", "Vios", 2022, 4);
+        motorcycle.displayInfo();
+System.out.println();
+
+truck.displayInfo();
+System.out.println();
+
+car.displayInfo();
     }
 }

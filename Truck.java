@@ -1,4 +1,4 @@
-public class Truck extends Vehicle {
+public class Truck extends Vehicle implements Serviceable {
     private double loadCapacity;
 
     public Truck(String brand, String model, int year, double loadCapacity) {
@@ -14,22 +14,12 @@ public class Truck extends Vehicle {
     }
 
     @Override
-    public void moveForward() {
-        System.out.println("A truck moves forward");
+    public void move() {
+        System.out.println("Truck is moving on the road.");
     }
 
     @Override
-    public void moveBackward() {
-        System.out.println("A truck moves backward");
-    }
-
-    @Override
-    public void moveLeft() {
-        System.out.println("A truck moves left");
-    }
-
-    @Override
-    public void moveRight() {
-        System.out.println("A truck moves right");
+    public void service() {
+        System.out.println("Truck: Inspect cargo and brakes.");
     }
 }
